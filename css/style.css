@@ -1,0 +1,69 @@
+.baccGround {
+    /* background-image: url("/assets/cash-macanaya-LtKseHMHKMQ-unsplash\ \(1\).jpg"); */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+
+    background-image: url(../assets/cash-macanaya-LtKseHMHKMQ-unsplash\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+.newTitle{
+    
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    /* margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px; */
+    top: 500px;
+    
+}
+.bgtxt{
+    /* background-image: url(../assets/cash-macanaya-LtKseHMHKMQ-unsplash\ \(1\).jpg); */
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+    
+}
+
+.txtColor {
+
+    color: black;
+    font-size: 45px;
+}
+
+.txtColor2 {
+
+    color: white;
+    font-size: 22px;
+}
+
+
+.nav-link {
+
+
+    align-items: flex-end;
+}
+
+ #styleNow {
+
+    float: right;
+    position: relative;
+    top: 150px;
+    
+ }
