@@ -12,8 +12,11 @@ let result = document.getElementById('result');
 let nameInput = document.getElementById('nameInput');
 
 let directory8firstNameURL = `https://magpantayjallforoneapi.azurewebsites.net/StudentDirectory/GetStudentByFirstName/firstName`;
+
 let directory8lastNameURL = `https://magpantayjallforoneapi.azurewebsites.net/StudentDirectory/GetStudentByFirstName/lastName`;
+
 let directory8slackNameURL = `https://magpantayjallforoneapi.azurewebsites.net/StudentDirectory/GetStudentByFirstName/slackName`;
+
 let directory8emailURL = `https://magpantayjallforoneapi.azurewebsites.net/StudentDirectory/GetStudentByFirstName/email`;
 
 
@@ -52,9 +55,18 @@ slackbtn.addEventListener('click',function(){
 
 function newMethod(URL, Model)
 {
-    fetch(`https://magpantayjallforoneapi.azurewebsites.net/StudentDirectory/GetStudentByFirstName/firstName`)
+    fetch(`https://magpantayjallforoneapi.azurewebsites.net/StudentDirectory/GetStudentByFirstName/${nameInput.value}`)
     .then(response => response.json())
-    .then(data => result.innerHTML = `First Name: ${data.firstName} </br> Last Name: ${data.lastName} </br> Slack Name: ${data.slackName} </br> Email: ${data.email}`);
+    .then(data => result.innerHTML = 
+    `firstName: ${data.firstName} 
+    </br> 
+    lastName: ${data.lastName} 
+    </br> 
+    slackName: ${data.slackName} 
+    </br> 
+    email: ${data.email}`);
+    
+    
     console.log(URL, Model)
 
 }
