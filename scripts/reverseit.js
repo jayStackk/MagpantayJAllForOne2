@@ -7,7 +7,7 @@ let result2 = document.getElementById('result2');
 
 submitbtn.addEventListener('click',function(){
     if(parseInt(numOne.value)){
-        getData();
+        getData(numOne, newWord);
     }else{
         result.textContent="Enter in a whole number!";
     }
@@ -16,7 +16,7 @@ submitbtn.addEventListener('click',function(){
 
 
 function getData(){
-    fetch(`https://dannyallinone.azurewebsites.net/MiniChallenges/miniCh7/int/${num.value}`)
+    fetch(`https://magpantayjallforoneapi.azurewebsites.net/MiniChallenge/MiniCh7/${numOne.value}`)
     .then(response => response.text())
     .then(data => {
         result.textContent =data;
@@ -24,14 +24,14 @@ function getData(){
 }
 
 submitbtn2.addEventListener('click',function(e){
-            getData1();
+            getData1(numOne, newWord);
 });
 
 
 function getData1(){
-    fetch(`https://dannyallinone.azurewebsites.net/MiniChallenges/miniCh7/string/${word.value}`)
+    fetch(`https://magpantayjallforoneapi.azurewebsites.net/MiniChallenge/MiniCh7/${newWord.value}`)
     .then(response => response.text())
     .then(data => {
-        result2.textContent =data;
+        result2.textContent = data;
     });
 }
