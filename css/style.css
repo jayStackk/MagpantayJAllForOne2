@@ -49,8 +49,10 @@ body {
 
 .txtColor2 {
 
+    position: relative;
+    top: px;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 
@@ -67,3 +69,52 @@ body {
     top: 150px;
     
  }
+
+ /* container-fluid {
+    position: relative;
+    width: 100%;
+    background-position: cover;
+ } */
+
+.container-fluid {
+
+    margin: 0px !important;
+    padding: 0px !important;
+ }
+
+ .enterBtn1 {
+
+
+    position: relative;
+
+    left: 249px;
+ }
+
+ #userNum1 {
+
+    padding-left: 40px;
+    
+    align-content: space-between;
+    
+
+ }
+
+ #userNum2 {
+
+    position: absolute;
+    
+    left: 100px;
+
+ }
+
+ .txtbg2{
+
+
+   
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-color: transparent;
+    border: none;
+}
