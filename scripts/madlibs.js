@@ -18,16 +18,16 @@ submitbtn.addEventListener('click', function(){
 
     let newModel = {
         fname: "John",
-        adj1: adj1.value,
-        noun1: noun1.value,
-        verb1: verb1.value,
-        nounPlural: nounPlural.value,
-        noun2: noun2.value,
-        place: place.value,
-        verb2: verb2.value,
-        vehicle: vehicle.value,
-        adj2: adj2.value,
-        noun3: noun3.value
+        adj1: "attracive",
+        noun1: "clean",
+        verb1: "sweeping",
+        nounPlural: "cat",
+        noun2: "pencil",
+        place: "bahamas",
+        verb2: "riding",
+        vehicle: "supra",
+        adj2: "dazzling",
+        noun3: "fit"
     };
     newMethod2(newModel);
 });
