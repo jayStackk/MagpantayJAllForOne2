@@ -1,4 +1,3 @@
-// let miniCh5URL = `https://magpantayjallforoneapi.azurewebsites.net/MiniChallenge/MiniCh5`;
 
 let adj1 = document.getElementById('adj1'); 
 let noun1 = document.getElementById('noun1');
@@ -13,9 +12,12 @@ let noun3 = document.getElementById('noun3');
 let submitbtn = document.getElementById('submitbtn');
 let result = document.getElementById('result');
 
-submitbtn.addEventListener('click',function(){
 
-    let miniCh5Model = {
+
+submitbtn.addEventListener('click', function(){
+
+    let newModel = {
+        fname: "John",
         adj1: adj1.value,
         noun1: noun1.value,
         verb1: verb1.value,
@@ -27,17 +29,19 @@ submitbtn.addEventListener('click',function(){
         adj2: adj2.value,
         noun3: noun3.value
     };
-    modelMethod(miniCh5Model);
+    newMethod2(newModel);
 });
 
 
-function modelMethod(url, model)
+function newMethod2(Model)
 {
 
 
-    fetch("https://magpantayjallforoneapi.azurewebsites.net/MiniChallenge/MiniCh5/{name}/{adj1.value}/{noun1}/{verb1}/{nounPlural}/{noun2}/{place}/{verb2}/{vehicle}/{adj2}/{noun3}")
+    fetch(`https://magpantayjallforoneapi.azurewebsites.net/MiniChallenge/MiniCh5/${Model.fname}/${Model.adj1}/${Model.noun1}/${Model.verb1}/${Model.nounPlural}/${Model.noun2}/${Model.place}/${Model.verb2}/${Model.vehicle}/${Model.adj2}/${Model.noun3}`)
     .then(response => response.text())
     .then(data => result.textContent = data);
 
-    console.log(url, model)
+    console.log(data)
+
+    
 }
